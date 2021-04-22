@@ -1,0 +1,52 @@
+@charset "UTF-8";
+html,body { height: 100%; }
+ul,li {list-style: none;}
+a { text-decoration: none; }
+img { border: 0; }
+* { margin: 0; padding: 0; }
+
+.bouncingball{
+  position: absolute;
+  width: 140px;
+  height: 140px;
+  border-radius: 100%;
+  background: #cccccc;
+  margin-top: 50px;
+  animation-name: bounce;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+.bottom_line{
+  position: absolute;
+  width: 100vw;
+  top: 330px;
+  height: 2px;
+  background: black;
+}
+
+@keyframes bounce {
+  0%{
+    top: 0;
+    animation-timing-function: ease-in;
+  }
+  50%{
+    top: 140px;
+    height: 140px;
+    animation-timing-function: ease-out;
+  }
+  55%{
+    top: 180px;
+    height: 100px;
+    animation-timing-function: ease-in;
+  }
+  65%{
+    top: 120px;
+    height: 140px;
+    animation-timing-function: ease-out;
+  }
+  100%{
+    top: 0;
+    animation-timing-function: ease-in;
+  }
+}
